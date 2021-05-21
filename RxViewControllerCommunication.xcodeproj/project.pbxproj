@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		52C3DBA52004DF1400ACE4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3DBA42004DF1400ACE4E4 /* AppDelegate.swift */; };
-		52C3DBA72004DF1400ACE4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3DBA62004DF1400ACE4E4 /* ViewController.swift */; };
+		52C3DBA72004DF1400ACE4E4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3DBA62004DF1400ACE4E4 /* MasterViewController.swift */; };
 		52C3DBAA2004DF1400ACE4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C3DBA82004DF1400ACE4E4 /* Main.storyboard */; };
 		52C3DBAC2004DF1400ACE4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C3DBAB2004DF1400ACE4E4 /* Assets.xcassets */; };
 		52C3DBAF2004DF1400ACE4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C3DBAD2004DF1400ACE4E4 /* LaunchScreen.storyboard */; };
+		52C3DBB72004DFB400ACE4E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3DBB62004DFB400ACE4E4 /* DetailViewController.swift */; };
+		77C2BE4DF45EAB14B9978E0B /* Pods_RxViewControllerCommunication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A862346377ED0E9C14D0B65 /* Pods_RxViewControllerCommunication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A862346377ED0E9C14D0B65 /* Pods_RxViewControllerCommunication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxViewControllerCommunication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C3DBA12004DF1400ACE4E4 /* RxViewControllerCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxViewControllerCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C3DBA42004DF1400ACE4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52C3DBA62004DF1400ACE4E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52C3DBA62004DF1400ACE4E4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		52C3DBA92004DF1400ACE4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52C3DBAB2004DF1400ACE4E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C3DBAE2004DF1400ACE4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C3DBB02004DF1400ACE4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C3DBB62004DFB400ACE4E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9CF89F5BE0814F5CAE628748 /* Pods-RxViewControllerCommunication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxViewControllerCommunication.release.xcconfig"; path = "Target Support Files/Pods-RxViewControllerCommunication/Pods-RxViewControllerCommunication.release.xcconfig"; sourceTree = "<group>"; };
+		D451A494C6E3233F2337A5F1 /* Pods-RxViewControllerCommunication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxViewControllerCommunication.debug.xcconfig"; path = "Target Support Files/Pods-RxViewControllerCommunication/Pods-RxViewControllerCommunication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C2BE4DF45EAB14B9978E0B /* Pods_RxViewControllerCommunication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				52C3DBA32004DF1400ACE4E4 /* RxViewControllerCommunication */,
 				52C3DBA22004DF1400ACE4E4 /* Products */,
+				8317AC4797EF2452A9E3148E /* Pods */,
+				7B9C05782846083C71C8C579 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +64,31 @@
 			isa = PBXGroup;
 			children = (
 				52C3DBA42004DF1400ACE4E4 /* AppDelegate.swift */,
-				52C3DBA62004DF1400ACE4E4 /* ViewController.swift */,
+				52C3DBA62004DF1400ACE4E4 /* MasterViewController.swift */,
+				52C3DBB62004DFB400ACE4E4 /* DetailViewController.swift */,
 				52C3DBA82004DF1400ACE4E4 /* Main.storyboard */,
 				52C3DBAB2004DF1400ACE4E4 /* Assets.xcassets */,
 				52C3DBAD2004DF1400ACE4E4 /* LaunchScreen.storyboard */,
 				52C3DBB02004DF1400ACE4E4 /* Info.plist */,
 			);
 			path = RxViewControllerCommunication;
+			sourceTree = "<group>";
+		};
+		7B9C05782846083C71C8C579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A862346377ED0E9C14D0B65 /* Pods_RxViewControllerCommunication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8317AC4797EF2452A9E3148E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D451A494C6E3233F2337A5F1 /* Pods-RxViewControllerCommunication.debug.xcconfig */,
+				9CF89F5BE0814F5CAE628748 /* Pods-RxViewControllerCommunication.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C3DBB32004DF1400ACE4E4 /* Build configuration list for PBXNativeTarget "RxViewControllerCommunication" */;
 			buildPhases = (
+				884C31A08DB743E3402567F7 /* [CP] Check Pods Manifest.lock */,
 				52C3DB9D2004DF1400ACE4E4 /* Sources */,
 				52C3DB9E2004DF1400ACE4E4 /* Frameworks */,
 				52C3DB9F2004DF1400ACE4E4 /* Resources */,
+				803CAB9DB1AFAEB0D6DA3E1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -91,11 +120,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Brian Advent";
 				TargetAttributes = {
 					52C3DBA02004DF1400ACE4E4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,12 +161,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		803CAB9DB1AFAEB0D6DA3E1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxViewControllerCommunication/Pods-RxViewControllerCommunication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxViewControllerCommunication/Pods-RxViewControllerCommunication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		884C31A08DB743E3402567F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxViewControllerCommunication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52C3DB9D2004DF1400ACE4E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C3DBA72004DF1400ACE4E4 /* ViewController.swift in Sources */,
+				52C3DBB72004DFB400ACE4E4 /* DetailViewController.swift in Sources */,
+				52C3DBA72004DF1400ACE4E4 /* MasterViewController.swift in Sources */,
 				52C3DBA52004DF1400ACE4E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +251,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,8 +259,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -211,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -234,6 +311,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,8 +319,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -262,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -272,6 +352,7 @@
 		};
 		52C3DBB42004DF1400ACE4E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D451A494C6E3233F2337A5F1 /* Pods-RxViewControllerCommunication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -279,13 +360,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.RxViewControllerCommunication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		52C3DBB52004DF1400ACE4E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF89F5BE0814F5CAE628748 /* Pods-RxViewControllerCommunication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,7 +375,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianadvent.RxViewControllerCommunication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
